@@ -25,7 +25,7 @@ const getAllCodeService = (inputType) => {
     return axios.get(`/api/allcode/?type=${inputType}`);
 }
 
-const getTopDoctorService = (limit) => {
+const getTopDoctorService = (limit = 5) => {
     return axios.get(`/api/top-doctor-home/?limit=${limit}`);
 }
 
